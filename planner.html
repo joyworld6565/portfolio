@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Student portfolio and academic planner of AMAMGINI JOY">
+<title>Academic Planner | AMAMGINI JOY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">AMAMGINI JOY</a>
+  <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  <nav id="nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html" class="active">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section class="container narrow">
+  <h1>Academic planner</h1>
+  <p class="lead">Plan your coursework. Add a task, tick it off when done, delete it when you no longer need it.</p>
+  <form id="task-form" class="inline-form">
+    <label for="task-input" class="sr-only">New task</label>
+    <input type="text" id="task-input" placeholder="e.g. Finish COS 106 term project" maxlength="100" autocomplete="off">
+    <button class="btn" type="submit">Add task</button>
+  </form>
+  <p id="task-error" class="error" role="alert"></p>
+  <p id="task-count" class="muted" aria-live="polite"></p>
+  <ul id="task-list" class="tasks"></ul>
+</section>
+</main>
+<footer class="site-footer"><p>&copy; 2026 AMAMGINI JOY &middot; COS 106 Term Project, MIVA Open University</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

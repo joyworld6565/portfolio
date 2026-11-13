@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Student portfolio and academic planner of AMAMGINI JOY">
+<title>Contact | AMAMGINI JOY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">AMAMGINI JOY</a>
+  <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  <nav id="nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section class="container narrow">
+  <h1>Contact me</h1>
+  <p class="lead">Have a question or a collaboration idea? Send a message and I will reply soon.</p>
+  <form id="contact-form" novalidate>
+    <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name"><small class="error" id="name-error"></small></div>
+    <div class="field"><label for="email">Email address</label><input type="email" id="email" name="email" autocomplete="email"><small class="error" id="email-error"></small></div>
+    <div class="field"><label for="phone">Phone number</label><input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="numeric"><small class="error" id="phone-error"></small></div>
+    <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5"></textarea><small class="error" id="message-error"></small></div>
+    <button class="btn" type="submit">Send message</button>
+    <p id="form-success" class="success" role="status"></p>
+  </form>
+</section>
+</main>
+<footer class="site-footer"><p>&copy; 2026 AMAMGINI JOY &middot; COS 106 Term Project, MIVA Open University</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
